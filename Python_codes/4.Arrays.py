@@ -1,0 +1,218 @@
+
+"""1. Write a function to add integer values of an array"""
+print("----------------perform sum of integers in array--------------")
+x = [1,2154,5,6,7,8,9,4,6]
+s = 0
+for i in x:
+    s += i
+print(s)
+#print(sum(x))
+
+
+"""2. Write a function to calculate the average value of an array of integers
+"""
+print("\n----------------perform average of integers in array--------------")
+average = s/(len(x))
+print(average)
+
+
+"""3. Write a program to find the index of an array element"""
+# find 2154 in 'x' array
+print(x)
+print("\n----------------finding element index in array--------------")
+y = eval(input("Input the array element: "))
+def index_e(x,y):
+    for i in range(len(x)):
+      if x[i] == y:
+        print(i,"is the index position of element in the array")
+index_e(x,y)
+
+
+"""4. Write a function to test if array contains a specific value"""
+print("\n----------------finding element existence in array--------------")
+y = eval(input("Input the array element to check existence: "))
+def test_exist(x,y):
+    if y in x:
+        print('True',"element exists in the array")
+    else:
+        print('False',"element does not exists in the array")
+test_exist(x,y)
+
+
+"""5. Write a function to remove a specific element from an array"""
+print("\n----------------removing element from the array--------------")
+print(x)
+r = eval(input("Input the array element to delete: "))
+def remove_e(x,r):
+    if r in x:
+        x.remove(r)
+        print("Performing delete operation...\n",x)
+    else:
+        print("The element does not exists in the array")
+remove_e(x,r)
+
+
+
+"""6. Write a function to copy an array to another array"""
+print("\n----------------copy array to another array--------------")
+array = x.copy()
+print("Copied x to array",array)
+
+
+# 7. Write a function to insert an element at a specific position in the array 
+print("\n--------------------- Insert an element at 2nd index position---------------")
+ins_element = eval(input("Input the array element to insert: "))
+x.insert(2,ins_element)
+print("The element 45 is inserted at index 2 position: ",x)
+
+# 8. Write a function to find the minimum and maximum value of an array
+print("\n--------------------- find min and max ---------------")
+print("The minimum number in the list: ",min(x))
+print("The maximum number in the list: ",max(x))
+
+	#Finding minimum aand maximum using function
+def min_max(numbers):
+	mini = numbers[0]
+	maxi = numbers[0]
+	for i in range(len(numbers)):
+		if(mini >= numbers[i]):
+			mini = numbers[i]
+		elif(maxi <= numbers[i]):
+			maxi = numbers[i]
+	print("The minimum number",mini)
+	print("the maximum number",maxi)
+	return maxi,mini	
+#calling function		
+min_max(x)
+
+#9. Write a function to reverse an array of integer values 
+print("\n--------------------- Reverse the string ---------------")
+def reverse_arr(array):
+   print(array," The original array")
+   r_arr = []
+   i = 1
+   for num in range(len(array)):
+      r_arr.append(array[-i])
+      i = i + 1
+   return print(r_arr,"The reversed array")
+reverse_arr(x)
+
+#10. Write a function to find the duplicate values of an array
+def dup_values(array):
+    seen = set()
+    duplicates = set()
+    for item in array:
+        if item in seen:
+            duplicates.add(item)
+        else:
+            seen.add(item)
+    return print("The duplicates found in the list: ",list(duplicates))
+	
+dup_values(x)
+
+
+# 11. Write a program to find the common values between two arrays 
+
+print("\n--------------------- Find common values in both arrays ---------------")
+def comm_values(arr1, arr2):
+    comm = []
+    print(arr1,"\n",arr2)
+    for item in arr1:
+        if item in arr2 and item not in comm:
+            comm.append(item)
+    print("The common values in both arrays: ",comm)
+
+list_a = [6, 52, 5, 8, 54, 1, 1,84, 65]
+list_b = [84, 788, 5, 85,1,1, 52]
+
+comm_values(list_b,list_a)
+	
+#12. Write a method to remove duplicate elements from an array
+print("\n--------------------- Remove all duplicate values in an array ---------------")
+def remove_duplicates(array):
+	N_list = []
+	print(array)
+	for i in array:
+		if i in array and i not in N_list:
+			N_list.append(i)
+	print(N_list)
+		
+remove_duplicates(list_a+list_b)
+
+
+#13 & 14. Write a method to find the second largest number in an array 
+print("\n---------------------2nd Largest number in an array ---------------")
+""" The second largest number in array """
+num = [541,464,8,11,8,6,9,0,484,48,8]
+num.sort()
+print(num,"\nThe 2nd largest number is ",num[-2])
+
+""" FUNCTION ?? """
+def large_2(array):
+	array.sort()
+	return print("\n",array,"\n The 2nd largest number is ",array[-2])
+	
+marks = list(range(100,35,-5))
+Classes = list(range(1,11,1))
+
+large_2(marks)
+large_2(Classes)
+
+#15. Write a method to find number of even number and odd numbers in an array
+print("\n---------------------The number of evens and odds in an array ---------------")
+def n_even_odd(array):
+	even = 0 
+	odd = 0
+	for item in array:
+		if item%2 == 0:
+			even += 1
+		else:
+			odd  += 1
+	print("\n",array,"\nThe no of even numbers in array: ", even,"\nThe no of odd numbers in array :",odd)
+	
+evens = list(range(2,20,2))
+odds  = list(range(1,30,2))
+
+n_even_odd(Classes)
+n_even_odd(evens)
+n_even_odd(odds)
+	
+#16. Write a function to get the difference of largest and smallest value 
+# we can use "min_max function" to find the large and small 
+print("\n---------------------The difference b/w largest and smallest value  ---------------")
+def large_small_diff(array):
+	print(array)
+	large,small = min_max(array)
+	print("The difference between large and small number is :", large-small)
+
+large_small_diff(Classes)
+large_small_diff(evens)
+
+#17  Write a method to verify if the array contains two specified elements(12,23,43) 
+print("\n---------------------Check the specified elements exits in an array ---------------")
+specified_elements= (12,23,43)
+def check_elements(specified, array):
+    found = [elem for elem in specified if elem in array]
+    missing = [elem for elem in specified if elem not in array]
+
+    for elem in found:
+        print(f"The element {elem} is in the array.")
+
+    for elem in missing:
+        print(f"The element {elem} is NOT in the array.")
+
+list_c = list(range(1,50,2))
+check_elements(specified_elements,list_c)
+
+#18. Write a program to remove the duplicate elements and return the new array 
+print("\n--------------------- Remove all duplicate values in an array ---------------")
+def remove_duplicates(array):
+	N_list = []
+	print(array)
+	for i in array:
+		if i in array and i not in N_list:
+			N_list.append(i)
+	print(N_list)
+array_1  = [1,1,1,1,1,6,6,8,9,5]
+remove_duplicates(array_1)
+
