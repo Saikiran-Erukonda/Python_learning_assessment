@@ -1,4 +1,4 @@
-# Python 
+# Python - A Programmming Language
 + The repository covers all the Topics of Python. It will guide you to how to solve the python question. The solutions were also provided.
 
 + The topics covered :
