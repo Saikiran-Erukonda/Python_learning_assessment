@@ -48,5 +48,5 @@ def l():
 f()
 l()
 ```
-#### Click Link on file_name for the full code.
-[`python_basics.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/Python_codes/1.python_basics.py)
+#### Click on the <file_name.py> below for the full code.
++ [`python_basics.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/Python_codes/1.python_basics.py)
