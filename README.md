@@ -1,6 +1,7 @@
 # Python - A Programmming Language
-![Python-Logo](https://github.com/user-attachments/assets/f09db91d-799b-42fa-a355-f0d621ef1e5f)
-
+``` html
+<img src="https://github.com/user-attachments/assets/f09db91d-799b-42fa-a355-f0d621ef1e5f" alt="Description" width="300" height="200">
+```
 + The repository covers all the Topics of Python. It will guide you to how to solve the python question. The solutions were also provided.
 - Click on file name to View the Code.
 + The topics covered :
