@@ -10,7 +10,7 @@
   3. [`Loops.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/3.Loops.md)
   4. [`Arrays.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/4.Arrays.md)
   5. [`Static.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/5.Static.md)
-  6. [`Strings.py`]
+  6. [`Strings.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/6.Strings.md)
   7. [`inheritance.py`]
   8. [`Access_modifiers.py`]
   9. [`Abstract_class.py`]
