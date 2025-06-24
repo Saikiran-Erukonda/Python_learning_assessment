@@ -11,7 +11,7 @@
   4. [`Arrays.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/4.Arrays.md)
   5. [`Static.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/5.Static.md)
   6. [`Strings.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/6.Strings.md)
-  7. [`inheritance.py`]
+  7. [`inheritance.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/Inheritance.md)
   8. [`Access_modifiers.py`]
   9. [`Abstract_class.py`]
   10. [`Packages.py`]
