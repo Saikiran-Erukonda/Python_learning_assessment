@@ -72,4 +72,6 @@ In other words:
 - There's no polymorphic resolution of data members, only of methods.
 """
 ```
+### Click on the below filename.py for full code.
+[`Inheritance.py`](https://github.com/Saikiran-Erukonda/Python_learning_assessment/blob/main/Python_codes/7.Inheritance.py)
 	
