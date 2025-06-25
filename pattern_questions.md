@@ -209,7 +209,7 @@ cross_star(int(a))
 ## 10. Hallow pyramid star pattern
 ``` python
 """ hallow pyramid star pattern
-	*
+    *
    * *
   *   *
  *******
